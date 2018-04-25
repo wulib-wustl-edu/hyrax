@@ -3,7 +3,8 @@ RSpec.describe Hyrax::PresenterRenderer do
   let(:ability) { double }
   let(:document) { SolrDocument.new(work.to_solr) }
   let(:presenter) { Hyrax::WorkShowPresenter.new(document, ability) }
-  let(:renderer) { described_class.new(presenter, view) }
+  let(:view_context) { ActionView::TestCase::TestController.new.view_context }
+  let(:renderer) { described_class.new(presenter, view_context) }
 
   describe "#label" do
     it "calls translate with defaults" do
