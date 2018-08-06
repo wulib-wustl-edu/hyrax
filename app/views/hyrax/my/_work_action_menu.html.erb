@@ -36,7 +36,7 @@
     <% if can? :transfer, document.id %>
       <li role="menuitem" tabindex="-1">
         <%= link_to(hyrax.new_work_transfer_path(document.id), class: 'itemicon itemtransfer', title: t("hyrax.dashboard.my.action.transfer")) do %>
-          <i aria-hidden="true" class='glyphicon glyphicon-transfer'></i>
+          <i aria-hidden="true" class="glyphicon glyphicon-transfer" aria-hidden="true"></i>
           <span> <%= t("hyrax.dashboard.my.action.transfer") %> </span>
         <% end %>
       </li>
