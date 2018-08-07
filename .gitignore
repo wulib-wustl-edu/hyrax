@@ -75,3 +75,8 @@ _yardoc
 lib/bundler/man
 spec/reports
 /spec/examples.txt
+
+
+### intellij files
+.idea/
+*.iml
